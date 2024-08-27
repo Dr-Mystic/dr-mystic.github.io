@@ -1,8 +1,3 @@
-# hello-world
-Hello World repository for Git tutorial. 
+# Portfolio
 
-This is an example repository for the Git tutorial on https://www.w3schools.com
-
-This repository is built step by step in the tutorial.
-
-Adding some lines directly from GitHub.
+This repository is designed to hold my portfolio as an aspiring software developer, shocasing my skills and experience as well as the current direction of my career.
