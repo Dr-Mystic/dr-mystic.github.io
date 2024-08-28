@@ -3,3 +3,5 @@
 
 # ignore all files in temp
 temp/
+
+.DS_Store

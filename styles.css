@@ -1,9 +1,11 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Times New Roman', 'Cambria', 'Roboto' ;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 header {
