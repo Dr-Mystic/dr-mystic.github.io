@@ -1,7 +1,0 @@
-# ignore all log files
-*.log
-
-# ignore all files in temp
-temp/
-
-.DS_Store
