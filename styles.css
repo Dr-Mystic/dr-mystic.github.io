@@ -26,6 +26,7 @@ body {
     text-align: center;
     height: 100vh;
     width: 160px;
+    transition: width 0.3s ease;
 }
 
 .sidebar img.profile-pic {
@@ -97,4 +98,33 @@ footer {
     width: 100%;
     position: fixed;
     bottom: 0;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100px;  /* Narrower sidebar for smaller screens */
+    }
+    
+    .main-content {
+        margin-left: 120px; /* Adjust main content position for smaller sidebar */
+        padding: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .sidebar {
+        width: 100%; /* Sidebar takes full width on small screens */
+        height: auto;
+        position: static;
+    }
+
+    .main-content {
+        margin-left: 0;  /* Main content goes below the sidebar */
+        padding: 20px;
+    }
+
+    footer {
+        position: static;
+    }
 }
