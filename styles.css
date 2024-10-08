@@ -67,7 +67,7 @@ body {
     display: block;
     text-align: center;
     padding: 10px;
-    background-color: #444;
+    background-color: #333;
     border-radius: 5px;
 }
 
@@ -84,12 +84,12 @@ body {
 
 /* Section Styles */
 section {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 h2 {
     font-size: 2em;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .project {
