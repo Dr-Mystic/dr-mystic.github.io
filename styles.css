@@ -1,184 +1,222 @@
-/* Global Styles */
+/* ======== Base Styles ======== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Inter", "Segoe UI", Roboto, sans-serif;
 }
 
 body {
-    font-family: 'Times New Roman', 'Cambria', 'Roboto';
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #f9fafb;
+    color: #222;
     line-height: 1.6;
-    margin: 0;
-    text-align: justify;
+    scroll-behavior: smooth;
 }
 
+/* ======== Layout ======== */
 .container {
     display: flex;
-    flex-wrap: nowrap;
+    min-height: 100vh;
 }
 
-/* Sidebar Styles for Desktop */
+/* Sidebar (Desktop) */
 .sidebar {
-    width: 250px;
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    height: 100vh;
+    background-color: #1f2937;
+    color: #f9fafb;
+    width: 260px;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     position: fixed;
-    top: 0;
-    left: 0;
+    height: 100vh;
 }
 
 .sidebar img.profile-pic {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    display: block;
-    margin: 0 auto 20px;
+    object-fit: cover;
+    border: 3px solid #f9fafb;
+    margin-bottom: 1rem;
 }
 
 .sidebar h1 {
-    text-align: center;
-    font-size: 1.5em;
-    margin-bottom: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
 }
 
 .sidebar p {
-    text-align: center;
-    font-style: italic;
-    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: #cbd5e1;
+    margin-bottom: 1rem;
 }
 
-.sidebar nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.sidebar nav ul li {
-    margin-bottom: 10px;
-}
-
-.sidebar nav ul li a {
-    color: white;
+.sidebar nav a {
     text-decoration: none;
-    font-size: 1.1em;
-    display: block;
+    color: #e5e7eb;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.sidebar nav a:hover {
+    color: #60a5fa;
+}
+
+/* ======== Mobile Header ======== */
+.mobile-header {
+    display: none;
     text-align: center;
-    padding: 10px;
-    background-color: #333;
-    border-radius: 5px;
+    background-color: #1f2937;
+    color: #f9fafb;
+    padding: 1.5rem 1rem;
 }
 
-.sidebar nav ul li a:hover {
-    background-color: #555;
+.mobile-header img.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #f9fafb;
 }
 
-/* Main Content Styles */
+.mobile-header h1 {
+    font-size: 1.4rem;
+    margin-top: 0.75rem;
+}
+
+.mobile-header p {
+    color: #d1d5db;
+}
+
+.mobile-header nav ul {
+    margin-top: 1rem;
+    list-style: none;
+}
+
+.mobile-header nav li {
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+.mobile-header nav a {
+    text-decoration: none;
+    color: #f9fafb;
+    font-weight: 500;
+}
+
+.mobile-header nav a:hover {
+    color: #93c5fd;
+}
+
+/* ======== Main Content ======== */
 .main-content {
-    margin-left: 270px;
-    padding: 20px;
-    flex-grow: 1;
+    flex: 1;
+    padding: 3rem 2rem;
+    margin-left: 260px;
+    max-width: 1000px;
+    text-align: justify;
 }
 
-/* Section Styles */
 section {
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
 }
 
-h2 {
-    font-size: 2em;
-    margin-bottom: 15px;
+section h2 {
+    font-size: 1.5rem;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    color: #1f2937;
+}
+
+section h3 {
+    margin-top: 1.5rem;
+    color: #374151;
+}
+
+section h4 {
+    margin-top: 0.75rem;
+    color: #111827;
+}
+
+p, li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+ul {
+    padding-left: 1.5rem;
 }
 
 .project {
-    margin-bottom: 30px;
+    margin-bottom: 1rem;
+    padding: 0.75rem 1rem;
+    background: #f3f4f6;
+    border-radius: 10px;
+    transition: background 0.2s ease, transform 0.2s ease;
 }
 
-.project h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.project p {
-    margin-bottom: 10px;
+.project:hover {
+    background: #e0f2fe;
+    transform: translateY(-2px);
 }
 
 .project a {
-    color: #007BFF;
     text-decoration: none;
+    color: #2563eb;
+    font-weight: 500;
 }
 
 .project a:hover {
     text-decoration: underline;
 }
 
-/* Footer Styles */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+/* ======== Contact Section ======== */
+#contact a {
+    color: #2563eb;
+    text-decoration: none;
 }
 
-/* Responsive Styles for Mobile */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
+#contact a:hover {
+    text-decoration: underline;
+}
 
+/* ======== Footer ======== */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #1f2937;
+    color: #d1d5db;
+    font-size: 0.9rem;
+}
+
+/* ======== Responsiveness ======== */
+@media (max-width: 900px) {
     .sidebar {
         display: none;
     }
 
     .mobile-header {
         display: block;
-        background-color: #333;
-        padding: 10px;
-        text-align: center;
-        color: white;
-    }
-
-    .mobile-header img.profile-pic {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        margin-bottom: 10px;
-    }
-
-    .mobile-header h1 {
-        font-size: 1.2em;
-    }
-
-    .mobile-header nav ul {
-        list-style-type: none;
-        padding: 0;
-    }
-
-    .mobile-header nav ul li {
-        display: inline;
-        margin: 0 10px;
-    }
-
-    .mobile-header nav ul li a {
-        color: white;
-        text-decoration: none;
-        font-size: 1.1em;
     }
 
     .main-content {
         margin-left: 0;
-        padding: 20px;
+        padding: 1.5rem;
     }
 }
 
-/* Hide mobile header on larger screens */
-@media (min-width: 769px) {
-    .mobile-header {
-        display: none;
+@media (max-width: 500px) {
+    section h2 {
+        font-size: 1.25rem;
+    }
+
+    .main-content {
+        padding: 1rem;
+    }
+
+    p, li {
+        font-size: 0.95rem;
     }
 }

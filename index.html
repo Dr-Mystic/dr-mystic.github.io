@@ -7,12 +7,17 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Mobile Header -->
     <header class="mobile-header">
         <img src="pfp.jpg" alt="Profile picture of Muhammad Farooq Nawaz Khan Khichi" class="profile-pic">
         <h1>Muhammad Farooq Nawaz Khan Khichi</h1>
+        <p>Aspiring Software Developer</p>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -20,80 +25,118 @@
     </header>
 
     <div class="container">
+        <!-- Sidebar for Desktop -->
         <aside class="sidebar">
             <img src="pfp.jpg" alt="Profile picture of Muhammad Farooq Nawaz Khan Khichi" class="profile-pic">
             <h1>Muhammad Farooq Nawaz Khan Khichi</h1>
             <p>Aspiring Software Developer</p>
             <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+                    <p><a href="#about">About</a></p>
+                    <p><a href="#education">Education</a></p>
+                    <p><a href="#experience">Experience</a></p>
+                    <p><a href="#skills">Skills</a></p>
+                    <p><a href="#projects">Projects</a></p>
+                    <p><a href="#contact">Contact</a></p>
             </nav>
         </aside>
 
-        <div class="main-content">
+        <!-- Main Content -->
+        <main class="main-content">
+            
             <section id="about">
                 <h2>About Me</h2>
-                <p>Hello! I'm a passionate software developer with a strong foundation in C++, Python, and OOP. I have a keen interest in artificial intelligence, machine learning, and data science, and I'm constantly exploring new technologies to expand my skill set. My journey into software development has been driven by curiosity and a desire to solve complex problems through innovative solutions. Whether it's building dynamic web applications or creating intelligent algorithms, I enjoy turning ideas into reality. I'm always eager to collaborate on exciting projects and contribute to impactful solutions.</p>
-                <p><br>Skills: C++, Python, HTML, CSS, MySQL, VB</p>
+                <p>
+                    Hello! I'm a passionate software developer with a strong foundation in C++, Python, and OOP. I have a keen interest in Artificial Intelligence, Machine Learning, and Data Science. My journey into software development has been fueled by curiosity and a desire to solve complex problems through creative solutions. Whether it's designing intelligent algorithms or building interactive applications, I enjoy turning ideas into impactful realities.
+                </p>
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+                <p><strong>Bachelor of Science in Computer Science</strong> — University of Central Punjab, Multan (2022–2026)</p>
+                <p><strong>Relevant Coursework:</strong> Data Structures, Algorithms, AI, Operating Systems, Machine Learning, Database Systems, Object-Oriented Programming</p>
+                <p><strong>Current CGPA: </strong>3.95/4.00</p>
+            </section>
+
+            <section id="experience">
+                <h2>Experience</h2>
+                <article>
+                    <h3>Academic Projects — UCP Multan</h3>
+                    <ul>
+                        <li>Developed multiple software systems including search engines, image processors, and academic tools.</li>
+                        <li>Focused on integrating efficient algorithms and clean UI design.</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                    <ul>
+                        <li>C++</li>
+                        <li>Python, Streamlit, OpenCV, PyQt</li>
+                        <li>C#, ASP.NET Web Forms</li>
+                        <li>HTML, CSS, JS</li>
+                        <li>MySQL, SQL Server</li>
+                        <li>Visual Basic</li>
+                    </ul>
             </section>
 
             <section id="projects">
                 <h2>Projects</h2>
-                <div class="project">
-                    <h3>Interactive Finite Automata Builder</h3>
-                    <p>An interactive Python application that allows users to design, visualize, and simulate finite automata (DFA/NFA).</p>
-                    <a href="https://github.com/Dr-Mystic/Interactive-Finite-Automata-Builder.git" target="_blank">View on GitHub</a>
-                </div>
 
+                <h3>🧠 AI & ML Projects</h3>
                 <div class="project">
-                    <h3>Automata Quiz App</h3>
-                    <p>An interactive quiz application built with Python and Tkinter, designed to help students learn and practice concepts from the Theory of Automata course. It includes multiple-choice questions, immediate feedback with explanations, and a modern GUI.</p>
-                    <a href="https://github.com/Dr-Mystic/Automata-Quiz-App.git" target="_blank">View on GitHub</a>
-                </div>
-
-                <div class="project">
-                    <h3>Academic Search Engine</h3>
-                    <p>This project is an academic search engine built using Streamlit, FAISS, and Sentence Transformers. The engine allows users to search for academic papers by querying titles, authors, venues, publication years, and abstracts from a dataset. The search is powered by FAISS (Facebook AI Similarity Search) for efficient similarity-based lookups on embeddings generated using a pre-trained transformer model.</p>
+                    <h4>Academic Search Engine</h4>
+                    <p>Built using Streamlit, FAISS, and Sentence Transformers for semantic academic paper search.</p>
                     <a href="https://github.com/Dr-Mystic/Academic-Search-Engine.git" target="_blank">View on GitHub</a>
                 </div>
 
+                <h3>🖥 Desktop Applications</h3>
                 <div class="project">
-                    <h3>Digital Image Processor</h3>
-                    <p>This is a PyQt5-based desktop application that allows users to perform various image processing tasks using OpenCV. Users can open images, apply transformations like grayscale conversion, rotation, scaling, edge detection, flipping, blurring, sharpening, converting image to pencil sketch, and then save the processed images.</p>
+                    <h4>Digital Image Processor</h4>
+                    <p>PyQt5-based image processing tool with OpenCV supporting filters, transformations, and sketching.</p>
                     <a href="https://github.com/Dr-Mystic/Digital-Image-Processor.git" target="_blank">View on GitHub</a>
                 </div>
-
                 <div class="project">
-                    <h3>GPA Calculator</h3>
-                    <p>This is a simple GPA calculator built using Streamlit. It allows users to add grading criteria with corresponding weights, enter obtained and total marks, and calculate their GPA.</p>
+                    <h4>Interactive Finite Automata Builder</h4>
+                    <p>Design and simulate DFA/NFA visually using Python.</p>
+                    <a href="https://github.com/Dr-Mystic/Interactive-Finite-Automata-Builder.git" target="_blank">View on GitHub</a>
+                </div>
+
+                <h3>🎓 Academic Tools</h3>
+                <div class="project">
+                    <h4>Automata Quiz App</h4>
+                    <p>Python + Tkinter quiz app for automata theory learning.</p>
+                    <a href="https://github.com/Dr-Mystic/Automata-Quiz-App.git" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project">
+                    <h4>GPA Calculator</h4>
+                    <p>Streamlit-based app to compute GPA dynamically using weighted grading criteria.</p>
                     <a href="https://github.com/Dr-Mystic/GPA-Calculator.git" target="_blank">View on GitHub</a>
                 </div>
 
+                <h3>⚙️ System Simulations</h3>
                 <div class="project">
-                    <h3>Railway Reservation System</h3>
-                    <p>A C++ project for OOP; it simulates a DBMS without the usage of traditional database. Dynamic Memory Allocation and File Handling are used to create this working system for railway administration.</p>
+                    <h4>Railway Reservation System</h4>
+                    <p>C++ OOP project simulating train reservations using file handling and dynamic memory.</p>
                     <a href="https://github.com/Dr-Mystic/Railway-Reservation-System.git" target="_blank">View on GitHub</a>
                 </div>
-
                 <div class="project">
-                    <h3>C++ Learning Tool</h3>
-                    <p>A simple project I made a while back for Programming Fundamentals course. It provides a command line application to learn C++, both theoretical concepts and their usage examples. The project itself was also written in C++.</p>
+                    <h4>C++ Learning Tool</h4>
+                    <p>Command-line application teaching theoretical and practical C++ concepts.</p>
                     <a href="https://github.com/Dr-Mystic/CPP-Learning-Tool.git" target="_blank">View on GitHub</a>
                 </div>
             </section>
 
             <section id="contact">
-                <h2>Contact Me</h2>
-                <p>WhatsApp: +92 303 6599757</p>
-                <p>Email: farooqnawaz.fk@gmail.com</p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/muhammad-farooq-nawaz-khan-khichi-3a42661b8/" target="_blank">Muhammad Farooq Nawaz Khan</a></p>
-                <p>Fiverr: <a href="https://www.fiverr.com/farooq_khichi13?up_rollout=true" target="_blank">Farooq Khichi</a></p>
-                <p>GitHub: <a href="https://github.com/Dr-Mystic" target="_blank">Muhammad Farooq Nawaz Khan</a></p>
+                <h2>Contact</h2>
+                <p><strong>WhatsApp:</strong> +92 303 6599757</p>
+                <p><strong>Email:</strong> <a href="mailto:farooqnawaz.fk@gmail.com">farooqnawaz.fk@gmail.com</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/muhammad-farooq-nawaz-khan-khichi-3a42661b8/" target="_blank">Muhammad Farooq Nawaz Khan</a></p>
+                <p><strong>Fiverr:</strong> <a href="https://www.fiverr.com/farooq_khichi13" target="_blank">Farooq Khichi</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/Dr-Mystic" target="_blank">Dr-Mystic</a></p>
             </section>
-        </div>
+
+        </main>
     </div>
 
     <footer>
